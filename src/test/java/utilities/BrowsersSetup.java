@@ -10,6 +10,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BrowsersSetup {
 	
+	String n = "iph";
+	
 	 private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
 	    public static WebDriver getDriver() {
