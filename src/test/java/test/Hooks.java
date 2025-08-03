@@ -9,17 +9,18 @@ import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import utilities.BrowsersSetup;
 
-public class Hooks{
+public class Hooks extends BrowsersSetup{
 	
 
 	@Before
 	public void setup(){
+		/*
 		 String browser = System.getProperty("browser", "chrome");  // Default to Chrome
-		 BrowsersSetup.setDriver(browser);
+		 BrowsersSetup.setDriver(browser); */
 		
-		/* setDriver("edge");
+		setDriver("edge");
 	        getDriver().manage().window().maximize();
-	        */
+	    
 		
 	}
 	
