@@ -1,0 +1,5 @@
+test\testRunner.class
+test\LoginStepDef.class
+test\loginPage.class
+test\Hooks.class
+wptest\wptest.class

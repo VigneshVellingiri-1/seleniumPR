@@ -1,5 +1,6 @@
 package test;
 
+import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -10,7 +11,6 @@ dryRun =false,monochrome = true,
 plugin = {"pretty","html:target/cucmber_report.html"})
 
 public class testRunner extends AbstractTestNGCucumberTests{
-
 	@Override
 	@DataProvider(parallel = true)
 	public Object[][] scenarios(){
