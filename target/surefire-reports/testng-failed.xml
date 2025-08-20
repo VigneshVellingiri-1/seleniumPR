@@ -13,16 +13,4 @@
       </class> <!-- test.testRunner -->
     </classes>
   </test> <!-- Test(failed) -->
-  <test thread-count="2" parallel="tests" name="Test1(failed)" verbose="0">
-    <parameter name="browser" value="edge"/>
-    <classes>
-      <class name="test.testRunner">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2"/>
-        </methods>
-      </class> <!-- test.testRunner -->
-    </classes>
-  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

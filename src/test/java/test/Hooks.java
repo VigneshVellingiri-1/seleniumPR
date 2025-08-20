@@ -18,7 +18,7 @@ public class Hooks extends BrowsersSetup{
 		 String browser = System.getProperty("browser", "chrome");  // Default to Chrome
 		 BrowsersSetup.setDriver(browser); */
 		
-		setDriver("edge");
+		setDriver("chrome");
 	        getDriver().manage().window().maximize();
 	    
 		
