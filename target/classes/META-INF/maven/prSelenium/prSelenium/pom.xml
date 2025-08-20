@@ -17,9 +17,6 @@
                 <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
         </suiteXmlFiles>
-        <systemPropertyVariables>
-            <browser>${browser}</browser> <!-- Optional for parallel browser testing -->
-        </systemPropertyVariables>
             </configuration>
         </plugin>
         <plugin>

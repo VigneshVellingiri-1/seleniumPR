@@ -1,9 +1,13 @@
 package test;
 
+import java.util.List;
+import java.util.Map;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -29,7 +33,16 @@ public class LoginStepDef extends BrowsersSetup{
 	public void the_user_entered(String password) {
 		loginPage.password.sendKeys(password);
 	}
-
+	
+	@And("The user entered valid user name and password")
+	public void The_user_entered_valid_user_name(DataTable table) {
+		
+		List<String> cred = table.asList();
+		//List<Map<String, String>> cred =  table.asMaps(String.class,String.class);
+		loginPage.userName.sendKeys(cred.get(0));
+		loginPage.password.sendKeys(cred.get(1));
+	}
+	
 	@And("the user taped login button")
 	public void the_user_taped_login_button() {
 		
